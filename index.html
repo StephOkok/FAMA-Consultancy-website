@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fama Consultancy offers expert IT solutions and consulting services including project management, web development, and IT infrastructure. Trusted by businesses for over 10 years.">
+    <meta name="keywords" content="IT consulting, project management, web development, IT solutions, business consulting, technology services">
+    <meta name="author" content="Fama Consultancy">
+    <meta property="og:title" content="Fama Consultancy - IT Solutions & Consulting">
+    <meta property="og:description" content="Expert IT solutions and consulting services for businesses">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fama Consultancy - IT Solutions & Consulting">
+    <meta name="twitter:description" content="Expert IT solutions and consulting services for businesses">
     <title>Fama Consultancy - IT Solutions & Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -12,7 +22,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Fama Consultancy Logo" class="navbar-logo">
@@ -118,53 +128,87 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="py-5" aria-label="About Our Company and Values">
         <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
-            <div class="row align-items-center about-height">
+            <div class="section-header text-center mb-5">
+                <h2>About Us</h2>
+                <p class="lead">Discover our commitment to excellence and innovation</p>
+            </div>
+            <div class="row align-items-center" role="region" aria-label="About Fama Consultancy">
                 <div class="col-md-6">
-                    <div class="about-content about-height-content">
-                        <p class="lead">Fama Consultancy is a premier IT consultancy firm dedicated to helping businesses thrive in the digital age. Founded in 2015, our mission is to provide innovative, reliable, and forward-thinking IT solutions that drive business success.</p>
-                        <div class="about-stats mb-4">
-                            <div class="row">
-                                <div class="col-4">
+                    <div class="about-content">
+                        <div class="row stats-grid mb-4">
+                            <div class="col-4 text-center">
+                                <div class="stat-item">
                                     <h3 class="text-primary">+100</h3>
                                     <p class="mb-0">Projects Completed</p>
                                 </div>
-                                <div class="col-4">
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-item">
                                     <h3 class="text-primary">+50</h3>
                                     <p class="mb-0">Happy Clients</p>
                                 </div>
-                                <div class="col-4">
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-item">
                                     <h3 class="text-primary">+20</h3>
                                     <p class="mb-0">Expert Consultants</p>
                                 </div>
                             </div>
                         </div>
-                        <p>Our team of certified IT professionals brings decades of combined experience in project management, software development, and IT infrastructure. We pride ourselves on delivering customized solutions that meet our clients' unique needs and exceed their expectations.</p>
-                        <p>We believe in building long-term partnerships with our clients, providing not just technical solutions but strategic guidance to help your business grow and succeed in today's fast-paced digital landscape.</p>
+                        <article class="about-description">
+                            <p>Our team of certified IT professionals brings decades of combined experience in project management, software development, and IT infrastructure. We pride ourselves on delivering customized solutions that meet our clients' unique needs and exceed their expectations.</p>
+                            <p>We believe in building long-term partnerships with our clients, providing not just technical solutions but strategic guidance to help your business grow and succeed in today's fast-paced digital landscape.</p>
+                        </article>
                         <div class="about-values mt-4">
                             <h4>Our Core Values</h4>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-primary me-2"></i>Client-Centric Approach</li>
-                                <li><i class="fas fa-check text-primary me-2"></i>Technical Excellence</li>
-                                <li><i class="fas fa-check text-primary me-2"></i>Continuous Innovation</li>
-                                <li><i class="fas fa-check text-primary me-2"></i>Professional Integrity</li>
+                            <ul class="list-unstyled values-list">
+                                <li>
+                                    <span class="value-icon me-2">
+                                        <i class="fas fa-check text-primary"></i>
+                                    </span>
+                                    <span class="value-text">Client-Centric Approach</span>
+                                </li>
+                                <li>
+                                    <span class="value-icon me-2">
+                                        <i class="fas fa-check text-primary"></i>
+                                    </span>
+                                    <span class="value-text">Technical Excellence</span>
+                                </li>
+                                <li>
+                                    <span class="value-icon me-2">
+                                        <i class="fas fa-check text-primary"></i>
+                                    </span>
+                                    <span class="value-text">Continuous Innovation</span>
+                                </li>
+                                <li>
+                                    <span class="value-icon me-2">
+                                        <i class="fas fa-check text-primary"></i>
+                                    </span>
+                                    <span class="value-text">Professional Integrity</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/about.jpg" alt="About Us" class="img-fluid rounded about-img">
+                    <figure class="about-image">
+                        <img src="images/about.jpg" alt="Our team working together in a modern office environment" class="img-fluid rounded about-img">
+                        <figcaption class="visually-hidden">Team members collaborating in a modern office setting</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Leadership Team Section -->
-    <section id="leadership" class="py-5 bg-light">
+    <section id="leadership" class="py-5 bg-light" aria-label="Our Leadership Team">
         <div class="container">
-            <h2 class="text-center mb-5">Our Leadership Team</h2>
+            <div class="section-header text-center mb-5">
+                <h2>Our Leadership Team</h2>
+                <p class="lead">Meet the visionaries behind our success</p>
+            </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="team-member text-center">
